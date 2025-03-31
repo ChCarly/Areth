@@ -3,59 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sito Squadra di Calcio</title>
+    <title>Club Calcio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Squadra di Calcio</h1>
+        <div class="logo">Club Calcio</div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#rosa">Rosa</a></li>
-                <li><a href="#risultati">Risultati</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#squadra">Squadra</a></li>
+                <li><a href="#calendario">Calendario</a></li>
+                <li><a href="#contatti">Contatti</a></li>
             </ul>
         </nav>
     </header>
     
-    <section id="home">
-        <h2>Benvenuti nel sito ufficiale della squadra</h2>
-        <p>Scopri le ultime novità, i risultati e le informazioni sulla nostra squadra.</p>
+    <section id="home" class="hero">
+        <h1>Benvenuti nel Club</h1>
+        <p>Segui tutte le novità della tua squadra del cuore</p>
     </section>
     
-    <section id="rosa">
-        <h2>Rosa della Squadra</h2>
-        <ul>
-            <li>Giocatore 1</li>
-            <li>Giocatore 2</li>
-            <li>Giocatore 3</li>
-            <li>Giocatore 4</li>
-        </ul>
+    <section id="news" class="news">
+        <h2>Ultime Notizie</h2>
+        <div class="news-container">
+            <article>
+                <h3>Vittoria in campionato!</h3>
+                <p>La squadra ha trionfato nell'ultima partita...</p>
+            </article>
+        </div>
     </section>
     
-    <section id="risultati">
-        <h2>Ultimi Risultati</h2>
-        <table>
-            <tr>
-                <th>Data</th>
-                <th>Partita</th>
-                <th>Risultato</th>
-            </tr>
-            <tr>
-                <td>20/03/2025</td>
-                <td>Squadra A vs Squadra B</td>
-                <td>2-1</td>
-            </tr>
-            <tr>
-                <td>25/03/2025</td>
-                <td>Squadra C vs Squadra A</td>
-                <td>1-3</td>
-            </tr>
-        </table>
+    <section id="squadra" class="squadra">
+        <h2>La Squadra</h2>
+        <div class="players">
+            <div class="player">Giocatore 1</div>
+            <div class="player">Giocatore 2</div>
+        </div>
+    </section>
+    
+    <section id="calendario" class="calendario">
+        <h2>Calendario Partite</h2>
+        <p>Prossime partite della stagione.</p>
     </section>
     
     <footer>
-        <p>&copy; 2025 Squadra di Calcio - Tutti i diritti riservati</p>
+        <p>&copy; 2025 Club Calcio - Tutti i diritti riservati</p>
     </footer>
 </body>
 </html>
