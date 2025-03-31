@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Squadra di Calcio</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.carousel img');
+            if (index >= slides.length) currentIndex = 0;
+            if (index < 0) currentIndex = slides.length - 1;
+            slides.forEach((slide, i) => {
+                slide.style.display = i === currentIndex ? 'block' : 'none';
+            });
+        }
+
+        function nextSlide() {
+            currentIndex++;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex--;
+            showSlide(currentIndex);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => showSlide(currentIndex));
+    </script>
 </head>
 <body>
     <header>Squadra di Calcio</header>
@@ -21,6 +45,16 @@
         <section id="partite">
             <h2>Prossime Partite</h2>
             <p>Calendario delle partite e risultati.</p>
+        </section>
+        <section id="carosello">
+            <h2>Foto delle Partite</h2>
+            <div class="carousel">
+                <button onclick="prevSlide()">&#10094;</button>
+                <img src="foto1.jpg" alt="Partita 1">
+                <img src="foto2.jpg" alt="Partita 2" style="display: none;">
+                <img src="foto3.jpg" alt="Partita 3" style="display: none;">
+                <button onclick="nextSlide()">&#10095;</button>
+            </div>
         </section>
         <section id="contatti">
             <h2>Contattaci</h2>
