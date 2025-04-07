@@ -1,69 +1,72 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Squadra di Calcio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script>
-        let currentIndex = 0;
-
-        function showSlide(index) {
-            const slides = document.querySelectorAll('.carousel img');
-            if (index >= slides.length) currentIndex = 0;
-            if (index < 0) currentIndex = slides.length - 1;
-            slides.forEach((slide, i) => {
-                slide.style.display = i === currentIndex ? 'block' : 'none';
-            });
-        }
-
-        function nextSlide() {
-            currentIndex++;
-            showSlide(currentIndex);
-        }
-
-        function prevSlide() {
-            currentIndex--;
-            showSlide(currentIndex);
-        }
-
-        document.addEventListener("DOMContentLoaded", () => showSlide(currentIndex));
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio |Christian Carlino</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>Squadra di Calcio</header>
-    <nav>
-        <a href="#squadra">Squadra</a>
-        <a href="#partite">Partite</a>
-        <a href="#contatti">Contatti</a>
-    </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
     <div class="container">
-        <section id="squadra">
-            <h2>La Nostra Squadra</h2>
-            <p>Informazioni sulla squadra, giocatori e staff tecnico.</p>
-        </section>
-        <section id="partite">
-            <h2>Prossime Partite</h2>
-            <p>Calendario delle partite e risultati.</p>
-        </section>
-        <section id="carosello">
-            <h2>Foto delle Partite</h2>
-            <div class="carousel">
-                <button onclick="prevSlide()">&#10094;</button>
-                <img src="foto1.jpg" alt="Partita 1">
-                <img src="foto2.jpg" alt="Partita 2" style="display: none;">
-                <img src="foto3.jpg" alt="Partita 3" style="display: none;">
-                <button onclick="nextSlide()">&#10095;</button>
-            </div>
-        </section>
-        <section id="contatti">
-            <h2>Contattaci</h2>
-            <p>Email: info@squadracalcio.com</p>
-            <p>Telefono: +39 123 456 7890</p>
-        </section>
+      <h1 class="hero-title">Ciao, sono <span class="highlight">[Christian]</span></h1>
+      <p class="hero-subtitle">Graphic Designer freelance</p>
     </div>
-    <footer>
-        &copy; 2025 Squadra di Calcio - Tutti i diritti riservati
-    </footer>
+  </header>
+
+  <!-- Chi Sono -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2>Chi Sono</h2>
+      <p>Sono un graphic designer con esperienza nella creazione di identità visive, branding, illustrazione e comunicazione digitale. Amo trasformare idee in immagini potenti e funzionali.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="section portfolio">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="img/progetto1.jpg" alt="Progetto 1">
+          <h3>Progetto 1</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="img/progetto2.jpg" alt="Progetto 2">
+          <h3>Progetto 2</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="img/progetto3.jpg" alt="Progetto 3">
+          <h3>Progetto 3</h3>
+        </div>
+        <!-- Aggiungi altri progetti se vuoi -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contatti -->
+  <section id="contatti" class="section contact">
+    <div class="container">
+      <h2>Contattami</h2>
+      <p>Hai un progetto in mente? Scrivimi!</p>
+      <form action="christiancarlino1@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="nome" placeholder="Il tuo nome" required>
+        <input type="email" name="email" placeholder="La tua email" required>
+        <textarea name="messaggio" placeholder="Scrivi il tuo messaggio..." required></textarea>
+        <button type="submit">Invia</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 [Christian Carlino]. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
