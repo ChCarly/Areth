@@ -2,36 +2,41 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
-  
   .hero-section {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; /* Spaziatura tra gli elementi */
     background-color: #6a0dad; /* Viola */
-    height: 100vh;
+    height: 15vh; /* Altezza dell'intestazione */
+    padding: 0 20px; /* Spaziatura interna */
     color: white;
+    position: fixed; /* Fissa l'intestazione in alto */
+    top: 0;
+    left: 0;
+    width: 100%; /* Larghezza completa */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombra per l'intestazione */
   }
   
   .photo-container {
-    flex: 1;
     display: flex;
-    justify-content: center;
     align-items: center;
   }
   
   .photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 150px; /* Larghezza desiderata */
+    height: 150px; /* Altezza desiderata */
+    border-radius: 50%; /* Rende l'immagine circolare */
     border: 5px solid white;
+    object-fit: cover; /* Mantiene le proporzioni e riempie il contenitore */
   }
   
   .name-container {
-    flex: 2;
     text-align: center;
+    flex: 1; /* Occupa lo spazio centrale */
   }
   
   .name {
-    font-size: 3rem;
+    font-size: 1.5rem; /* Dimensione del testo ridotta */
     font-weight: bold;
   }
+ 
