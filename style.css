@@ -23,12 +23,12 @@ body {
   }
   
   .photo {
-    width: 150px; /* Larghezza desiderata */
-    height: 150px; /* Altezza desiderata */
-    border-radius: 50%; /* Rende l'immagine circolare */
-    border: 5px solid white;
-    object-fit: cover; /* Mantiene le proporzioni e riempie il contenitore */
-  }
+  width: 150px; /* Larghezza desiderata */
+  height: 150px; /* Altezza desiderata */
+  border-radius: 50%; /* Rende l'immagine circolare */
+  border: 5px solid white;
+  object-fit: cover; /* Mantiene le proporzioni e riempie il contenitore */
+}
   
   .name-container {
     text-align: center;
@@ -39,4 +39,43 @@ body {
     font-size: 1.5rem; /* Dimensione del testo ridotta */
     font-weight: bold;
   }
- 
+
+.pdf-slider {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  padding: 20px 0;
+  margin-top: 20vh; /* Sposta lo slider sotto l'intestazione */
+}
+
+.slider-container {
+  display: flex;
+  gap: 20px;
+  scroll-behavior: smooth; /* Permette uno scorrimento fluido */
+  overflow-x: auto; /* Abilita lo scorrimento orizzontale */
+  width: 100%;
+}
+
+.slide {
+  min-width: 200px;
+  text-align: center;
+  padding: 0; /* Rimuove il padding */
+  border-radius: 0; /* Rimuove gli angoli arrotondati */
+  box-shadow: none; /* Rimuove l'ombra */
+  background-color: transparent; /* Rimuove lo sfondo viola */
+}
+
+.slide img {
+  width: 100%; /* L'immagine riempie completamente il contenitore */
+  height: auto; /* Mantiene le proporzioni */
+  border-radius: 0; /* Rimuove gli angoli arrotondati */
+  margin: 0; /* Rimuove il margine */
+  transition: transform 0.3s;
+}
+
+.slide img:hover {
+  transform: scale(1.05);
+}
