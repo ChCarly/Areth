@@ -132,8 +132,8 @@ header{
 }
 .dropdown a:hover,
 .dropdown a.active{
-	color: var(--main-color);
-	border-bottom: 3px solid var(--main-color);
+	color: var(--second-bg-color);
+	border-bottom: 3px solid var(--second-bg-color);
 }
 .icone_dropdown{
 	display: flex;
@@ -141,7 +141,7 @@ header{
 }
 .icone_dropdown li{
 	font-size: 3rem;
-	color: var(--main-color);
+	color: var(--second-bg-color);
 	transition: 0.3s ease-in-out;
 }
 .icone_dropdown li a{
