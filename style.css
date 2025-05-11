@@ -1,16 +1,7 @@
-/*
-Colori logo:
-	Giallo #FBBA05
-	Blu #00578A
-	Arancio #DE3B14
-	Blu scuro #1E3549
-	Nero #000000
-	Bianco #FFFFFF
-*/
+
 
 /*FONT*/
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 /*GENERALE*/
 *{
 	margin: 0;
@@ -279,11 +270,9 @@ section{
 	padding: 10rem 12% 10rem;
 }
 .about h2,
-.s2d h2,
-.s3d h2,
-.video h2,
-.contact h2,
-.dove-puoi-trovarmi h2{  
+.progetti h2,
+.contattami h2,
+.mappa h2{  
 	margin-bottom: 1rem;
 	color: var(--title-color);
 	font-family: "Kode Mono", monospace;
@@ -408,21 +397,7 @@ p{
 .contact form .btn{
 	margin-top: 2rem;
 }
-.google-maps {
-    margin-top: 20px; /* Add spacing above the map */
-    max-width: 100%; /* Ensure it fits within the container */
-    height: 300px; /* Set a fixed height */
-    overflow: hidden; /* Prevent overflow issues */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better visibility */
-    margin-bottom: 50px; /* Add spacing below the section */
-}
 
-h2 {
-    margin-top: 0px; /* Reduce spacing above each h2 */
-    font-size: 1.5rem; /* Optional: Adjust font size for better visibility */
-    font-weight: bold; /* Optional: Ensure headings stand out */
-}
 /*FOOOTER*/
 .footer{
 	position: relative;
