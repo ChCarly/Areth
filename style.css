@@ -273,10 +273,12 @@ section{
 .progetti h2,
 .s2d h2,
 .contattami h2,
-.mappa h2{  
+.mappa h2,
+.new-section h2{  
+	margin-bottom: 3rem;
 	margin-bottom: 1rem;
 	color: var(--title-color);
-	font-family: "Kode Mono", monospace;
+	font-family: "Bebas", monospace;
 	font-optical-sizing: auto;
 	font-style: normal;
 	font-size: 8rem;
