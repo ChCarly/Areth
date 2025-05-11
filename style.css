@@ -408,7 +408,21 @@ p{
 .contact form .btn{
 	margin-top: 2rem;
 }
+.google-maps {
+    margin-top: 20px; /* Add spacing above the map */
+    max-width: 100%; /* Ensure it fits within the container */
+    height: 300px; /* Set a fixed height */
+    overflow: hidden; /* Prevent overflow issues */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better visibility */
+    margin-bottom: 50px; /* Add spacing below the section */
+}
 
+h2 {
+    margin-top: 0px; /* Reduce spacing above each h2 */
+    font-size: 1.5rem; /* Optional: Adjust font size for better visibility */
+    font-weight: bold; /* Optional: Ensure headings stand out */
+}
 /*FOOOTER*/
 .footer{
 	position: relative;
