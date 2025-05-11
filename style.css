@@ -27,7 +27,7 @@ html{
 body{
 	background: var(--bg-color);
 	color: var(--text-color);
-	font-family: "Roboto", sans-serif;
+	font-family: "Bebas", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
@@ -271,6 +271,7 @@ section{
 }
 .about h2,
 .progetti h2,
+.s2d h2,
 .contattami h2,
 .mappa h2{  
 	margin-bottom: 1rem;
