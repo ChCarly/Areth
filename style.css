@@ -282,7 +282,8 @@ section{
 .s2d h2,
 .s3d h2,
 .video h2,
-.contact h2{
+.contact h2,
+.dove-puoi-trovarmi h2{  
 	margin-bottom: 1rem;
 	color: var(--title-color);
 	font-family: "Kode Mono", monospace;
@@ -292,6 +293,13 @@ section{
 	text-align: center;
 	margin: 1rem 0;
 }
+.dove-puoi-trovarmi{
+	padding: 100px 15px;
+	background: var(--bg-color);
+}
+.dove-puoi-trovarmi h2{
+	margin-bottom: 3rem;
+}  
 p{
 	font-size: 3rem;
 	font-family: "Roboto", sans-serif;
