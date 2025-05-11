@@ -23,11 +23,11 @@ Colori logo:
 }
 :root{
 	/*Definizione variabili dei colori*/
-	--bg-color: #3b0255;			/*Blu Scuro*/
-	--second-bg-color: #6d0fac;		/*Blu*/
+	--bg-color: #3b0255;			/*viola scuro*/
+	--second-bg-color: #6d0fac;		/*viola*/
 	--text-color: white;			/**/
 	--main-color: #FBBA05;			/*Giallo*/
-	--title-color: #fcfcfc;			/*Arancio*/
+	--title-color: #fcfcfc;			/*Bianco*/
 }
 html{
 	font-size: 60%;
