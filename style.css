@@ -270,8 +270,8 @@ section{
 	padding: 10rem 12% 10rem;
 }
 .about h2,
-.s2d h2,
 .home h2,
+.progetti h2,
 .contact h2,
 .mappa h2,
 .new-section h2{  
@@ -335,8 +335,8 @@ p{
 				0 0 100px var(--title-color);
 }
 
-/*2D*/
-.s2d{
+/*.progetti*/
+.progetti{
 	padding: 100px 15px;
 	background: var(--bg-color);
 	display: flex;
