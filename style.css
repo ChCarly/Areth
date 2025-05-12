@@ -266,11 +266,7 @@ span{
 section{
 	min-height: 100vh;
 	padding: 10rem 12% 10rem;
-}
-.about h2,
-.contact h2,
-.dove-puoi-trovarmi h2,
-.progetti h2{
+
 	margin-bottom: 3rem;
 	margin-bottom: 1rem;
 	color: var(--title-color);
