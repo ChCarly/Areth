@@ -62,7 +62,7 @@ header{
 	font-weight: 500;
 	transition: 0.3s ease;
 	border-bottom: 3px solid transparent;
-	font-family: "Kode Mono", monospace;
+	font-family: "Bebas", monospace;
 }
 .navbar.active {
     display: block;
@@ -270,7 +270,7 @@ section{
 .about h2,
 .contact h2,
 .dove-puoi-trovarmi h2,
-.s2d h2{
+.progetti h2{
 	margin-bottom: 3rem;
 	margin-bottom: 1rem;
 	color: var(--title-color);
