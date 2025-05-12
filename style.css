@@ -732,3 +732,80 @@ footer .social a:hover{
 		margin-bottom: 3rem;
 	}
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 2rem 5%;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home-content h3 {
+        font-size: 2rem;
+    }
+
+    .home-img img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about .areacentro {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about .arealaterale img {
+        width: 100%;
+        height: auto;
+    }
+
+    .areaslider {
+        width: 100%;
+        margin: 0;
+    }
+
+    .swiper-slide img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contact form {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .contact form .input-box {
+        width: 100%;
+    }
+
+    .contact form textarea {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer .list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
