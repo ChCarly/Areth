@@ -147,10 +147,10 @@ header{
 .home-content{
 	display: flex;
 	flex-direction: column;
-	align-items: baseline;
-	text-align: left;
+	align-items: center;
+	text-align: center;
 	justify-content: center;
-	margin-top: 3rem;
+	gap: 2rem;
 }
 span{
 	color: var(--main-color);
@@ -170,12 +170,15 @@ span{
 	line-height: 1;
 }
 .home-img{
-	border-radius: 50%;
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
 }
 .home-img img{
 	position: relative;
 	top: 3rem;
-	width: 32vw;
+	width: 50%;
+	max-width: 300px;
 	border-radius: 50%;
 	box-shadow: 0 0 25px var(--main-color);
 	cursor: pointer;
