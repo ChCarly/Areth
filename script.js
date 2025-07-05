@@ -104,6 +104,28 @@ document.querySelectorAll('.swiper-slide img').forEach(img => {
     });
 });
 
-document.querySelector('.img-modal .close').addEventListener('click', function () {
-    document.getElementById('imgModal').style.display = "none";
+document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById('imgModal');
+    const modalImg = document.getElementById('modalImage');
+    const closeBtn = document.querySelector('.img-modal .close');
+
+    // Clic su immagine: mostra modal
+    document.querySelectorAll('.swiper-slide img').forEach(img => {
+        img.addEventListener('click', function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        });
+    });
+
+    // Clic su [X]: chiude il modal
+    closeBtn.addEventListener('click', function () {
+        modal.style.display = "none";
+    });
+
+    // Clic fuori dall’immagine: chiude il modal
+    modal.addEventListener('click', function (e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
 });

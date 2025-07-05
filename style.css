@@ -889,4 +889,5 @@ footer .social a:hover{
     color: white;
     font-size: 40px;
     cursor: pointer;
+    z-index: 10001;
 }
