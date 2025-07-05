@@ -808,4 +808,39 @@ footer .social a:hover{
         flex-direction: column;
         gap: 1rem;
     }
+}/* Responsive base: max 768px */
+@media screen and (max-width: 768px) {
+    .home-content, .areacentro {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-img img,
+    .arealaterale img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    header .toggle_btn {
+        display: block;
+    }
 }
