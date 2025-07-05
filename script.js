@@ -128,4 +128,21 @@ document.addEventListener("DOMContentLoaded", function () {
             modal.style.display = "none";
         }
     });
+    document.addEventListener('DOMContentLoaded', function () {
+    const banner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('accept-cookies');
+
+    // Verifica se localStorage è disponibile
+    if (banner && acceptBtn) {
+        const cookiesAccepted = localStorage.getItem('cookiesAccepted');
+
+        if (!cookiesAccepted) {
+            banner.classList.remove('hidden'); // Mostra il banner
+        }
+
+        acceptBtn.addEventListener('click', function () {
+            localStorage.setItem('cookiesAccepted', 'true');
+            banner.classList.add('hidden'); // Nasconde il banner
+        });
+    }
 });
