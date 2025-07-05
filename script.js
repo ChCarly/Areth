@@ -93,3 +93,17 @@ document.addEventListener('DOMContentLoaded', () => {
         banner.classList.add('hidden');
     });
 });
+
+// Fullscreen image on click
+document.querySelectorAll('.swiper-slide img').forEach(img => {
+    img.addEventListener('click', function () {
+        const modal = document.getElementById('imgModal');
+        const modalImg = document.getElementById('modalImage');
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    });
+});
+
+document.querySelector('.img-modal .close').addEventListener('click', function () {
+    document.getElementById('imgModal').style.display = "none";
+});
