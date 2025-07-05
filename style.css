@@ -866,3 +866,46 @@ footer .social a:hover{
     cursor: pointer;
     z-index: 10001;
 }
+.cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: #FFD700; /* Giallo */
+    color: #222;
+    padding: 1em 1.5em;
+    border-radius: 15px; /* Angoli arrotondati */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    font-size: 14px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cookie-banner p {
+    margin: 0;
+    flex: 1;
+    padding-right: 10px;
+}
+
+.cookie-banner button {
+    background-color: #6a0dad; /* Viola */
+    color: #fff;
+    border: none;
+    padding: 0.6em 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cookie-banner button:hover {
+    background-color: #58009d;
+}
+
+.cookie-banner.hidden {
+    display: none;
+}
