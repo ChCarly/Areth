@@ -850,8 +850,11 @@ footer .social a:hover{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        z-index: 1000;
-        font-size: 14px;
+        z-index: 10000;
+        font-size: 1.6rem;
+    }
+    .cookie-banner.hidden {
+        display: none;
     }
     .cookie-banner button {
         background-color: #fff;
@@ -860,6 +863,7 @@ footer .social a:hover{
         padding: 0.5em 1em;
         cursor: pointer;
         font-weight: bold;
+        border-radius: 5px;
     }
 
 
