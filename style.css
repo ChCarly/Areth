@@ -551,7 +551,32 @@ footer .social a:hover{
     /* Cambiare il colore dei pallini al passaggio del mouse */
 	background: var(--main-color) !important;
 }
-
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #222;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    font-size: 1.6rem;
+}
+.cookie-banner.hidden {
+    display: none;
+}
+.cookie-banner button {
+    background-color: #fff;
+    color: #222;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
 /*RESPONSIVE*/
 @media(max-width:1285px){
 	html{
@@ -902,32 +927,6 @@ footer .social a:hover{
     cursor: pointer;
     background: none;
     border: none;
-}
-.cookie-banner {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #222;
-    color: white;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10000;
-    font-size: 1.6rem;
-}
-.cookie-banner.hidden {
-    display: none;
-}
-.cookie-banner button {
-    background-color: #fff;
-    color: #222;
-    border: none;
-    padding: 0.5em 1em;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 5px;
 }
 }
 .img-modal {
