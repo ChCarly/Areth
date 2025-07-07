@@ -839,66 +839,29 @@ footer .social a:hover{
     header .toggle_btn {
         display: block;
     }
-   /* Cookie consent popup */
-.popup-cookie {
-    display: flex;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(246, 250, 0, 0.949);
-    z-index: 2000;
-    justify-content: center;
-    align-items: flex-start; /* popup in alto */
-    pointer-events: auto;
-}
+   .cookie-banner {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #222;
+        color: white;
+        padding: 1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        font-size: 14px;
+    }
+    .cookie-banner button {
+        background-color: #fff;
+        color: #222;
+        border: none;
+        padding: 0.5em 1em;
+        cursor: pointer;
+        font-weight: bold;
+    }
 
-.popup-cookie-content {
-    background: rgba(255,255,255,0.97);
-    color: #a200ff;
-    border-radius: 15px;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.18);
-    padding: 24px 24px 16px 24px;
-    margin: 40px auto 0 auto; /* popup centrato orizzontalmente, in alto verticalmente */
-    max-width: 420px;
-    width: 95%;
-    text-align: center;
-    font-size: 2vh;
-    position: relative;
-    pointer-events: auto;
-}
-
-.popup-cookie-content .btn-acquista {
-    margin: 10px 8px 0 8px;
-    min-width: 90px;
-    font-size: 1.7vh;
-    background: #e1ff01;
-    color: #000000;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.popup-cookie-content .btn-acquista:hover {
-    background: #ad6e6e;
-    color: #fff;
-}
-
-.popup-cookie-content .cookie-link {
-    display: block;
-    margin-top: 16px;
-    color: #cd8585;
-    text-decoration: underline;
-    font-size: 1.7vh;
-    cursor: pointer;
-    transition: color 0.2s;
-}
-
-.popup-cookie-content .cookie-link:hover {
-    color: #5a2d2d;
-}
 
 /* Stile per la sezione informativa privacy che appare sopra il popup cookie */
 #cookie-privacy-info {
