@@ -98,13 +98,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const acceptBtn = document.getElementById('accept-cookies');
 
     if (banner && acceptBtn) {
-        const cookiesAccepted = localStorage.getItem('cookiesAccepted');
-        if (!cookiesAccepted) {
-            banner.classList.remove('hidden');
-        }
+        banner.classList.remove('hidden'); // Mostra sempre il banner
 
         acceptBtn.addEventListener('click', function () {
-            localStorage.setItem('cookiesAccepted', 'true');
             banner.classList.add('hidden');
         });
     }
