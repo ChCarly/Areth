@@ -74,12 +74,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // --- MODALE FULLSCREEN ---
     const modal = document.getElementById('imgModal');
     const modalImg = document.getElementById('modalImage');
+    const modalDesc = document.getElementById('modalDesc'); // aggiunto
     const closeBtn = document.querySelector('.img-modal .close');
 
     document.querySelectorAll('.swiper-slide img').forEach(img => {
         img.addEventListener('click', function () {
             modal.style.display = "block";
             modalImg.src = this.src;
+            modalDesc.textContent = this.getAttribute('data-desc') || ""; // mostra descrizione
         });
     });
 
