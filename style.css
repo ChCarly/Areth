@@ -556,7 +556,7 @@ footer .social a:hover{
     bottom: 0;
     left: 0;
     right: 0;
-    background: #222;
+    background: #ffff00;
     color: white;
     padding: 1em;
     display: flex;
@@ -570,7 +570,7 @@ footer .social a:hover{
 }
 .cookie-banner button {
     background-color: #fff;
-    color: #222;
+    color: #8c00ff;
     border: none;
     padding: 0.5em 1em;
     cursor: pointer;
@@ -869,7 +869,7 @@ footer .social a:hover{
         bottom: 0;
         left: 0;
         right: 0;
-        background: #222;
+        background: #eeff00;
         color: white;
         padding: 1em;
         display: flex;
@@ -883,7 +883,7 @@ footer .social a:hover{
     }
     .cookie-banner button {
         background-color: #fff;
-        color: #222;
+        color: #7700ff;
         border: none;
         padding: 0.5em 1em;
         cursor: pointer;
