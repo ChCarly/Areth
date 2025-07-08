@@ -505,7 +505,7 @@ footer .social a:hover{
     object-fit: contain;
     display: block;
     margin: 0 auto;
-    background: #fff; /* opzionale: sfondo bianco per immagini trasparenti */
+    background: #ffffff00; /* opzionale: sfondo bianco per immagini trasparenti */
     box-shadow: 0 2px 16px rgba(0,0,0,0.10);
 }
 .swiper{
