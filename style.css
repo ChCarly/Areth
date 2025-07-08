@@ -498,12 +498,15 @@ footer .social a:hover{
 	align-content: center;
 }
 .swiper-slide img{
-    max-height: 80vh;
-	max-width: 80%;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	align-content: center;
+    max-width: 100%;
+    max-height: 70vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    background: #fff; /* opzionale: sfondo bianco per immagini trasparenti */
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
 }
 .swiper{
     margin-left: auto;
