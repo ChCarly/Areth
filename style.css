@@ -779,8 +779,11 @@ footer .social a:hover{
 
     .dropdown {
         display: block;
-		width: 45%;
+		width: 50%;
 		text-align: center;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
     }
 
     .home {
@@ -862,6 +865,9 @@ footer .social a:hover{
         display: block;
 		width: 50%;
 		text-align: center;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
     }
     .btn-group {
         flex-direction: column;
