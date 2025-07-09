@@ -143,6 +143,7 @@ header{
 	align-items: center;
 	justify-content: center;
 	gap: 15rem;
+	padding-top: 15rem;
 }
 .home-content{
 	display: flex;
@@ -605,6 +606,9 @@ footer .social a:hover{
 	.s2d .arealaterale img{
 		height: 400px;
 	}
+	.home {
+        padding-top: 15rem; /* ancora più spazio su tablet/mobile */
+    }
 }
 @media(max-width:895px){
 	.toggle_btn{
