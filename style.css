@@ -780,6 +780,7 @@ footer .social a:hover{
     .dropdown {
         display: block;
 		width: 45%;
+		text-align: center;
     }
 
     .home {
